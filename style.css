@@ -1,16 +1,54 @@
+@charset "UTF-8";
 
-head {
+body {
+    width: 99vw;
+    height: 97vh;
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("image/ig.png");
+}
+
+.load {
+    display: flex;
+    
+}
+
+.load div {
+width: 50px;
+height: 50px;
+background: rgb(179, 41, 75);
+margin: 15px;
+border-radius: 50%;
+animation: anima 1s ease-in-out infinite alternate ;
 
 }
 
-body{
+.load div:nth-child(1){
+    animation-delay: -0.6s;
+} 
+
+.load div:nth-child(2){
+    animation-delay: -0.4s;
+} 
+
+.load div:nth-child(1){
+    animation-delay: -0.6s;
+} 
+
+.load div:nth-child(3){
+    animation-delay: -0.2s;
+} 
+
+
+@keyframes anima {
+    from{
+        transform: translateY(-100%);
+    }to{
+        transform: translateY(100%);
+    }
 
 }
 
-main {
-
-}
-
-footer {
-
-}
