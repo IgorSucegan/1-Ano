@@ -4,7 +4,7 @@
   background-image: url(image/pn.png);
     background-repeat: no-repeat;
     background-size: 101% 101%;
-  
+    background-color:black;
   }
 body {
     width: 99vw;
