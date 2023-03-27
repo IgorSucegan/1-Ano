@@ -1,54 +1,79 @@
 @charset "UTF-8";
 
+.body1{
+  background-image: url(image/pn.png);
+    background-repeat: no-repeat;
+    background-size: 101% 101%;
+  
+  }
 body {
     width: 99vw;
     height: 97vh;
-    background-color: palevioletred;
+    background-color: #FFB6C1;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url("image/ig.png");
-}
-
-.load {
-    display: flex;
     
 }
-
-.load div {
-width: 50px;
-height: 50px;
-background: rgb(179, 41, 75);
-margin: 15px;
-border-radius: 50%;
-animation: anima 1s ease-in-out infinite alternate ;
-
-}
-
-.load div:nth-child(1){
-    animation-delay: -0.6s;
-} 
-
-.load div:nth-child(2){
-    animation-delay: -0.4s;
-} 
-
-.load div:nth-child(1){
-    animation-delay: -0.6s;
-} 
-
-.load div:nth-child(3){
-    animation-delay: -0.2s;
-} 
-
-
-@keyframes anima {
-    from{
-        transform: translateY(-100%);
-    }to{
-        transform: translateY(100%);
+.content-coracao::after {
+    content: 'Te Amo';
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 25% auto;
+    animation: 1s linear 0s infinite;
+  }
+.content-coracao {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    margin: 50% auto;
+    animation: pulsa 1s linear 0s infinite;
+    
+  }
+  @keyframes pulsa {
+    0% {
+      transform: scale(0.9) rotate(0deg);
     }
-
-}
+    50% {
+      transform: scale(1) rotate(0deg);
+    }
+    70% {
+      transform: scale(1.1) rotate(0deg);
+    }
+    80% {
+      transform: scale(1.2) rotate(0deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    } 
+  }
+  .square {
+    transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+    background: #e71940;
+    position: absolute;
+    top: 30px;
+  }
+  .circle:after,
+  .circle:before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 55px;
+    border-radius: 50%;
+    background: #e71940;
+  }
+  .circle:after {
+    left: 5px;
+    top: 6px;
+  }
+  .circle:before {
+    right: 5px;
+    top: 6px;
+  }
 
